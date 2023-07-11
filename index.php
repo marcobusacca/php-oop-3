@@ -13,8 +13,13 @@
     // INSERISCO ALLEGATO ALL'ISTANZA "EMAIL-1"
     $email_1->attachment = new Attachment("video-lezione", "mp4", 50);
 
-    var_dump($email_1);
-    var_dump($email_2);
+
+    // CREO LE ISTANZE DELLA SOTTO-CLASSE "SMS"
+    $sms_1 = new Sms("Gianfranco", "Raffaele", "Titolo Sms", "Contenuto Sms", true, true);
+    $sms_2 = new Sms("Cesare", "Giulia", "Titolo Sms", "Contenuto Sms", false, false);
+
+    var_dump($sms_1);
+    var_dump($sms_2);
 ?>
 
 <!DOCTYPE html>
