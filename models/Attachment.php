@@ -12,7 +12,6 @@
                 $this->type = $type;
                 $this->size = $size;
             }
-
         // FINE METODI
     }
 ?>
