@@ -2,6 +2,7 @@
     // IMPORTO TUTTE LE CLASSI DA MODELS
     require_once __DIR__."/models/CommunicationSystem.php";
     require_once __DIR__."/models/Email.php";
+    require_once __DIR__."/models/Attachment.php";
     require_once __DIR__."/models/Sms.php";
     require_once __DIR__."/models/PushNotifications.php";
 ?>
