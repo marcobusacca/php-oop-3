@@ -9,7 +9,7 @@
 
         // METODI
             // COSTRUTTORE
-            function __construct($sender, $receiver, $title, $content){
+            function __construct(String $sender, String $receiver, String $title, String $content){
                 $this->sender = $sender;
                 $this->receiver = $receiver;
                 $this->title = $title;
