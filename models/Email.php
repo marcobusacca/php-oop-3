@@ -12,6 +12,11 @@
                 $this->deliveryNotification = $deliveryNotification;
             }
 
+            // FUNZIONI
+            public function getDeliveryNotification(){
+                return $this->deliveryNotification;
+            }
+
         // FINE METODI
     }
 ?>
