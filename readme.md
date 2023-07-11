@@ -8,6 +8,8 @@ Classe Genitore : ComunicationSystem
 Sotto-Classi : Email, Sms, PushNotifications
 ```
 
+Considerare che:
+
 * Tutte le comunicazioni hanno alcune proprietà in comune come mittente, titolo, messaggio e destinatari;
 
 * Le email possono avere degli allegati;
