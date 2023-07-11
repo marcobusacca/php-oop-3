@@ -3,7 +3,7 @@
 Progettare un Sistema di Comunicazione, simulando il comportamento di tale sistema:
 
 ```
-Classe Genitore : ComunicationSystem
+Classe Genitore : CommunicationSystem
 
 Sotto-Classi : Email, Sms, PushNotifications
 ```
