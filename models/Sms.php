@@ -13,6 +13,25 @@
                 $this->replyApproval = $replyApproval;
             }
 
+            // FUNZIONI
+            public function getReadNotification(){
+                return $this->readNotification;
+            }
+
+            public function getReplyApproval(){
+                return $this->replyApproval;
+            }
+
+            // RISPOSTA
+            public function reply(){
+                return "Risposta inviata";
+            }
+
+            // POLIMORFISMO FUNCTION "SEND"
+            public function send(){
+                return "Sms inviato";
+            }
+
         // FINE METODI
     }
 ?>
