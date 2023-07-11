@@ -48,5 +48,15 @@
         <title>php-oop-3</title>
     </head>
     <body>
+        <!-- Main -->
+        <main>
+            <!-- Main Container -->
+            <div class="container">
+                <!-- Main Row -->
+                <div class="row">
+                </div>
+            </div>
+        </main>
+        <!-- Fine Main -->
     </body>
 </html>
