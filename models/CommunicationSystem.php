@@ -5,6 +5,6 @@
         private $receiver;
         private $title;
         private $content;
-        private static $ringtone = "DRIIIN";
+        public static $ringtone = "DRIIIN";
     }
 ?>
