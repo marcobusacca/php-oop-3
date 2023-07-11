@@ -18,8 +18,13 @@
     $sms_1 = new Sms("Gianfranco", "Raffaele", "Titolo Sms", "Contenuto Sms", true, true);
     $sms_2 = new Sms("Cesare", "Giulia", "Titolo Sms", "Contenuto Sms", false, false);
 
-    var_dump($sms_1);
-    var_dump($sms_2);
+
+    // CREO LE ISTANZE DELLA SOTTO-CLASSE "PUSH-NOTIFICATIONS"
+    $pushNotification_1 = new PushNotifications("Silvia", "Sofia", "Titolo Notifica Push", "Contenuto Notifica Push", true, "fab fa-whatsap");
+    $pushNotification_2 = new PushNotifications("Alessia", "Piero", "Titolo Notifica Push", "Contenuto Notifica Push", false, "fab fa-twitter");
+
+    var_dump($pushNotification_1);
+    var_dump($pushNotification_2);
 ?>
 
 <!DOCTYPE html>
