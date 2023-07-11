@@ -29,7 +29,7 @@
 
             // POLIMORFISMO FUNCTION "SEND"
             public function send(){
-                return "Notifica inviata";
+                return "Notifica Push inviata";
             }
 
         // FINE METODI
