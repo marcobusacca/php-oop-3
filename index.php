@@ -23,6 +23,16 @@
     // CREO LE ISTANZE DELLA SOTTO-CLASSE "PUSH-NOTIFICATIONS"
     $pushNotification_1 = new PushNotifications("Silvia", "Sofia", "Titolo Notifica Push", "Contenuto Notifica Push", true, "fab fa-whatsap");
     $pushNotification_2 = new PushNotifications("Alessia", "Piero", "Titolo Notifica Push", "Contenuto Notifica Push", false, "fab fa-twitter");
+
+    // ARRAY CONTENENTE TUTTE LE ISTANZE DI OGNI SOTTO-CLASSE DELLA CLASSE GENITORE "COMMUNICATION-SYSTEM"
+    $CommunicationSystem = [
+        $email_1,
+        $email_2,
+        $sms_1,
+        $sms_2,
+        $pushNotification_1,
+        $pushNotification_2
+    ]
 ?>
 
 <!DOCTYPE html>
