@@ -33,6 +33,7 @@
                 return $this->content;
             }
 
+            // FUNCTION "SEND"
             public function send(){
                 return "Comunicazione effettuata";
             }

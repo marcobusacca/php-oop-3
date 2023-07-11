@@ -17,6 +17,21 @@
                 return $this->deliveryNotification;
             }
 
+            // INOLTRO
+            public function forward(){
+                return "Inoltro effettuato";
+            }
+
+            // STAMPA
+            public function print(){
+                return "Stampa effettuata";
+            }
+
+            // POLIMORFISMO FUNCTION "SEND"
+            public function send(){
+                return "Email inviata";
+            }
+
         // FINE METODI
     }
 ?>
