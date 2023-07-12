@@ -1,16 +1,21 @@
 <?php
     class Sms extends CommunicationSystem{
+        // TRAITS
+        use Date;
+
         // PROPRIETA
         private $readNotification;
         private $replyApproval;
         public static $ledColor = "Green";
+        private String $date;
 
         // METODI
             // COSTRUTTORE
-            function __construct(String $sender, String $receiver, String $title, String $content, Bool $readNotification, Bool $replyApproval){
+            function __construct(String $sender, String $receiver, String $title, String $content, Bool $readNotification, Bool $replyApproval, String $date){
                 parent::__construct($sender, $receiver, $title, $content);
                 $this->readNotification = $readNotification;
                 $this->replyApproval = $replyApproval;
+                $this->date = $date;
             }
 
             // FUNZIONI

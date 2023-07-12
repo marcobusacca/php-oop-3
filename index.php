@@ -1,4 +1,7 @@
 <?php
+    // IMPORTO I TRAIT DA TRAITS
+    require_once __DIR__."/traits/Date.php";
+    
     // IMPORTO TUTTE LE CLASSI DA MODELS
     require_once __DIR__."/models/CommunicationSystem.php";
     require_once __DIR__."/models/Email.php";
@@ -8,16 +11,16 @@
 
 
     // CREO LE ISTANZE DELLA SOTTO-CLASSE "EMAIL"
-    $email_1 = new Email("Marco", "Luca", "Oggetto Email", "Contenuto Email", true);
-    $email_2 = new Email("Luigi", "Marco", "Oggetto Email", "Contenuto Email", false);
+    $email_1 = new Email("Marco", "Luca", "Oggetto Email", "Contenuto Email", true, "2023-07-12 13:04:20");
+    $email_2 = new Email("Luigi", "Marco", "Oggetto Email", "Contenuto Email", false, "2023-07-12 13:14:20");
 
     // INSERISCO ALLEGATO ALL'ISTANZA "EMAIL-1"
     $email_1->attachment = new Attachment("video-lezione", "mp4", 50);
 
 
     // CREO LE ISTANZE DELLA SOTTO-CLASSE "SMS"
-    $sms_1 = new Sms("Gianfranco", "Raffaele", "Titolo Sms", "Contenuto Sms", true, true);
-    $sms_2 = new Sms("Cesare", "Giulia", "Titolo Sms", "Contenuto Sms", false, false);
+    $sms_1 = new Sms("Gianfranco", "Raffaele", "Titolo Sms", "Contenuto Sms", true, true, "2023-07-12 13:18:20");
+    $sms_2 = new Sms("Cesare", "Giulia", "Titolo Sms", "Contenuto Sms", false, false, "2023-07-12 13:25:20");
 
 
     // CREO LE ISTANZE DELLA SOTTO-CLASSE "PUSH-NOTIFICATIONS"
@@ -115,6 +118,13 @@
                                     </div>
                                     <hr>
                                     <?php if(get_class($item) === "Email"){ ?>
+                                        <!-- Date -->
+                                        <div class="my-2">
+                                            <strong>Data:</strong>
+                                            <span>
+                                                <?php echo $item->timeDiff() ?>
+                                            </span>
+                                        </div>
                                         <!-- Attachment -->
                                         <?php if($item->attachment){ ?>
                                             <div class="my-2">
@@ -165,6 +175,13 @@
                                         <hr>
                                     <?php } ?>
                                     <?php if(get_class($item) === "Sms"){ ?>
+                                        <!-- Date -->
+                                        <div class="my-2">
+                                            <strong>Data:</strong>
+                                            <span>
+                                                <?php echo $item->timeDiff() ?>
+                                            </span>
+                                        </div>
                                         <!-- Read Notification -->
                                         <div class="my-2">
                                             <strong>Sms visualizzato:</strong>
