@@ -118,29 +118,27 @@
                                         <!-- Attachment -->
                                         <?php if($item->attachment){ ?>
                                             <div class="my-2">
-                                                <div>
-                                                    <strong>Allegato:</strong>
-                                                    <ul>
-                                                        <li>
-                                                            <span>Nome Allegato:</span>
-                                                            <span>
-                                                                <?php echo $item?->attachment->name ?>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span>Tipologia Allegato:</span>
-                                                            <span>
-                                                                <?php echo $item?->attachment->type ?>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span>Dimensione Allegato:</span>
-                                                            <span>
-                                                                <?php echo $item?->attachment->size." MB " ?>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <strong>Allegato:</strong>
+                                                <ul>
+                                                    <li>
+                                                        <span>Nome Allegato:</span>
+                                                        <span>
+                                                            <?php echo $item?->attachment->name ?>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Tipologia Allegato:</span>
+                                                        <span>
+                                                            <?php echo $item?->attachment->type ?>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Dimensione Allegato:</span>
+                                                        <span>
+                                                            <?php echo $item?->attachment->size." MB " ?>
+                                                        </span>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <hr>
                                         <?php } ?>
